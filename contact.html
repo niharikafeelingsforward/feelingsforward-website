@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Feelings Forward</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Feelings Forward" class="logo-img"/>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-primary">Get In Touch</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <h1>Get In Touch</h1>
+    <p>I'd love to hear from you. Reach out and let's start the conversation.</p>
+  </section>
+
+  <section class="section contact-section">
+    <div class="contact-info">
+      <h2>Let's Talk</h2>
+      <p>Whether you have questions about a service, want to book a session, or just want to say hello — I'm here.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <h4>Email</h4>
+            <p>niharika.feelingsforward@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <h4>Phone / WhatsApp</h4>
+            <p>9818899946</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <h4>Location</h4>
+            <p>South Extension Part II, New Delhi</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📅</span>
+          <div>
+            <h4>Book a Session</h4>
+            <p><a href="#" class="inline-link">Click here to book via Google Calendar</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="social-links mt-20">
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">Facebook</a>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2>Send a Message</h2>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Niharika" required/>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@email.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Phone Number (optional)</label>
+          <input type="tel" placeholder="+91 98XXXXXXXX"/>
+        </div>
+        <div class="form-group">
+          <label>What are you reaching out about?</label>
+          <select>
+            <option value="">Select a service...</option>
+            <option>Individual Therapy</option>
+            <option>Couple Therapy</option>
+            <option>Family Therapy</option>
+            <option>Peer Supervision</option>
+            <option>Workshops</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea rows="5" placeholder="Tell me a little about what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Send Message</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        ✅ Thank you! I'll get back to you within 24 hours.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How do I schedule an appointment? <span>+</span></button>
+        <div class="faq-answer">
+          <p>You can book a session via email, phone/WhatsApp, Instagram, or Facebook. The standard session is 50–60 minutes and payment is made prior to the session.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Is all my information kept confidential? <span>+</span></button>
+        <div class="faq-answer">
+          <p>Yes. All information discussed in session is kept strictly confidential, except in cases where there is a risk of harm to yourself or others, or where legal obligations apply.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What if I'm running late to a session? <span>+</span></button>
+        <div class="faq-answer">
+          <p>Sessions will still end at the scheduled time. If you'd like to extend, additional time is charged at a pro-rated hourly rate.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How many sessions will I need? <span>+</span></button>
+        <div class="faq-answer">
+          <p>Therapy is a collaborative process. The number of sessions depends on your goals and pace — something we'll work out together in our early sessions.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What is the cancellation policy? <span>+</span></button>
+        <div class="faq-answer">
+          <p>Cancellations must be made at least 24 hours in advance. Late cancellations or no-shows will be charged the full session fee, as the slot cannot be reallocated to another client on short notice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Feelings Forward" class="footer-logo"/>
+        <p>Making mental health a priority, one conversation at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>📧 niharika.feelingsforward@gmail.com</p>
+        <p>📞 9818899946</p>
+        <p>📍 South Extension Part II, New Delhi</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">Instagram</a>
+          <a href="#" class="social-btn">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Feelings Forward. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
