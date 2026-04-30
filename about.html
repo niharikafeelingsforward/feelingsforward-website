@@ -51,31 +51,145 @@
   <!-- QUALIFICATIONS -->
   <section class="section qualifications-section">
     <div class="section-header">
-      <h2>Qualifications & Training</h2>
-      <p>My professional background and credentials.</p>
+      <h2>Qualifications &amp; Training</h2>
+      <p>Education, training, experience, and achievements.</p>
     </div>
-    <div class="qual-grid">
-      <div class="qual-card">
-        <div class="qual-icon">🎓</div>
-        <h4>Master's in Psychology</h4>
-        <p>Specialisation in Counselling Psychology</p>
-      </div>
-      <div class="qual-card">
-        <div class="qual-icon">📜</div>
-        <h4>Certified Mental Health Professional</h4>
-        <p>Certified since 2017</p>
-      </div>
-      <div class="qual-card">
-        <div class="qual-icon">🧠</div>
-        <h4>Clinical Hypnotherapy</h4>
-        <p>Certified Hypnotherapist</p>
-      </div>
-      <div class="qual-card">
-        <div class="qual-icon">👥</div>
-        <h4>7+ Years of Experience</h4>
-        <p>Working with adolescents and adults</p>
+
+    <div class="qual-tabs">
+      <button class="qual-tab-btn active" onclick="showQualTab('education', this)">Education &amp; Training</button>
+      <button class="qual-tab-btn" onclick="showQualTab('experience', this)">Work Experience</button>
+      <button class="qual-tab-btn" onclick="showQualTab('achievements', this)">Achievements</button>
+    </div>
+
+    <!-- EDUCATION & TRAINING TAB -->
+    <div class="qual-tab-content active" id="qual-education">
+      <div class="qual-timeline">
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🎓</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">Degree</span>
+            <h4>Bachelor of Arts + Master of Arts (BA+MA) — Clinical Psychology</h4>
+            <p class="qual-institution">Amity University, Uttar Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">📜</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">Certification</span>
+            <h4>Certified Clinical Hypnotherapist</h4>
+            <p class="qual-institution">California Hypnosis Institute, USA</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🧠</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">Certification</span>
+            <h4>Certified Rational Emotive &amp; Cognitive Behaviour Therapist (RECBT)</h4>
+            <p class="qual-institution">AltMindShift, Himachal Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🌿</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">Certification Diploma</span>
+            <h4>Trauma Informed Therapy</h4>
+            <p class="qual-institution">International Society for the Study of Trauma and Dissociation, USA (ISSTD)</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🔬</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">Training</span>
+            <h4>Understanding Personality Disorders Beyond Diagnosis — 12-Week Programme</h4>
+            <p class="qual-institution">Hank Nunn Institute</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">📋</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">Academic Qualification</span>
+            <h4>Qualified Assistant Professor — UGC National Eligibility Test (NET)</h4>
+            <p class="qual-institution">University Grants Commission, India</p>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <!-- WORK EXPERIENCE TAB -->
+    <div class="qual-tab-content" id="qual-experience">
+      <div class="qual-timeline">
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">💼</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">2020 — Present</span>
+            <h4>Counselling Psychologist</h4>
+            <p class="qual-institution">Hope and Strength Initiative (HASI), New Delhi, India</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">💼</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">2018 — 2019</span>
+            <h4>Counselling Psychologist</h4>
+            <p class="qual-institution">Nirmal Chhaya Complex, Manas Foundation, New Delhi, India</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ACHIEVEMENTS TAB -->
+    <div class="qual-tab-content" id="qual-achievements">
+      <div class="qual-timeline">
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🏅</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">2024</span>
+            <h4>Delegate Keynote Speaker — National Conclave on Workplace Mental Well-being</h4>
+            <p class="qual-institution">TOGETHER Mental Health Awareness Initiative, NSIC Business Park, New Delhi</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🥈</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">2013 — 2017</span>
+            <h4>Silver Medal &amp; Certificate — Top Academic Performance</h4>
+            <p class="qual-institution">Amity University, Uttar Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">🏆</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">2014 — 2016</span>
+            <h4>Merit Certificate — Highest Academic Performance (2014–15 &amp; 2015–16)</h4>
+            <p class="qual-institution">Amity University, Uttar Pradesh, India</p>
+          </div>
+        </div>
+
+        <div class="qual-timeline-item">
+          <div class="qual-timeline-icon">⭐</div>
+          <div class="qual-timeline-body">
+            <span class="qual-tag">School</span>
+            <h4>Award for Highest Marks in 12th Boards — Biology &amp; Home Science</h4>
+            <p class="qual-institution">Modern School, Vasant Vihar, New Delhi, India</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
 
   <!-- MY APPROACH -->
