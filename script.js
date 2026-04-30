@@ -68,3 +68,15 @@ window.addEventListener('scroll', () => {
     navbar.style.boxShadow = 'none';
   }
 });
+
+// ---- QUALIFICATIONS TABS ----
+function showQualTab(tabName, btn) {
+  // Hide all tab contents
+  document.querySelectorAll('.qual-tab-content').forEach(el => el.classList.remove('active'));
+  // Remove active from all buttons
+  document.querySelectorAll('.qual-tab-btn').forEach(el => el.classList.remove('active'));
+  // Show selected tab
+  document.getElementById('qual-' + tabName).classList.add('active');
+  // Mark button active
+  btn.classList.add('active');
+}
